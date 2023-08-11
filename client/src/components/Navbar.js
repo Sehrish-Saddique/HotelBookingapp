@@ -22,7 +22,7 @@ function Navbar() {
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="/register">
-              Room
+              Register
                 {/* Room <span class="sr-only">(current)</span> */}
               </a>
             </li>
