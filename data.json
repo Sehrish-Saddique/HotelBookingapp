@@ -1,0 +1,69 @@
+[
+    {
+      "name": "Cozy Suite",
+      "maxcount": 2,
+      "phonenumber": 1234567890,
+      "rentperday": 100,
+      "imageUrl":  ["https://images.unsplash.com/photo-1568375823920-d87b454f0b8d"],
+      "currentbookings": [],
+      "type": "Standard",
+      "description": "A comfortable suite for couples.",
+      "timestamps": true
+    },
+    {
+      "name": "Family Room",
+      "maxcount": 4,
+      "phonenumber": 9876543210,
+      "rentperday": 150,
+      "imageUrl": ["https://images.unsplash.com/photo-1568375823920-d87b454f0b8d"],
+      "currentbookings": [],
+      "type": "Deluxe",
+      "description": "Spacious room suitable for families.",
+      "timestamps": true
+    },
+    {
+      "name": "Luxury Suite",
+      "maxcount": 2,
+      "phonenumber": 5551234567,
+      "rentperday": 250,
+      "imageUrl": ["https://images.unsplash.com/photo-1522770179533-24471fcdba45"],
+      "currentbookings": [],
+      "type": "Luxury",
+      "description": "Indulge in a luxurious suite with stunning views.",
+      "timestamps": true
+    },
+    {
+      "name": "Single Room",
+      "maxcount": 1,
+      "phonenumber": 6789012345,
+      "rentperday": 75,
+      "imageUrl": ["https://images.unsplash.com/photo-1519701567-5ecf25a4c0f9"],
+      "currentbookings": [],
+      "type": "Economy",
+      "description": "Affordable and comfortable single room.",
+      "timestamps": true
+    },
+    {
+      "name": "Penthouse Suite",
+      "maxcount": 6,
+      "phonenumber": 9876123450,
+      "rentperday": 500,
+      "imageUrl": ["https://images.unsplash.com/photo-1550950158-ec4dbbfc9a3f"],
+      "currentbookings": [],
+      "type": "Premium",
+      "description": "Experience luxury at its finest in our penthouse suite.",
+      "timestamps": true
+    },
+    {
+      "name": "Business Suite",
+      "maxcount": 3,
+      "phonenumber": 2345678901,
+      "rentperday": 200,
+      "imageUrl": ["https://images.unsplash.com/photo-1568375823920-d87b454f0b8d"],
+      "currentbookings": [],
+      "type": "Executive",
+      "description": "Perfect for business travelers with added amenities.",
+      "timestamps": true
+    }
+  ]
+  

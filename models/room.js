@@ -25,9 +25,13 @@ const roomSchema = mongoose.Schema({
     description:{
         type:String,
         required:true
-    },
-    timestamps : true,
-})
+    }, 
+    
+        //  timestamp: true // This enables timestamps for the created and updated fields
+     
+    }, { timestamps: true });
 
-const roomModel = mongoose.model('room',roomSchema);
+    
+
+const roomModel = mongoose.model('Rooms',roomSchema);
 module.exports = roomModel;
