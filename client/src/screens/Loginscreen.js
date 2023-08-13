@@ -11,17 +11,18 @@ function Loginscreen() {
   
   const[loading,setloading]=useState(false);
   const [error, seterror] = useState();
-  
+
   async function Login(){
     
       const user={
-         email:email,
-        password:password,
+         email,
+        password,
     }
     try{
       setloading(true)
-      const result = await axios.post('/api/users/login',user).data
+      const result = (await axios.post('/api/users/login',user)).data
       setloading(false)
+
       localStorage.setItem('currentUser',JSON.stringify(result))
       window.location.href='/home'
       }
@@ -32,12 +33,12 @@ function Loginscreen() {
    }
   return (
 
-    <> 
+    <div> 
     {loading && (<Loader/>)}
-    {error && (<Error message='Invalid Credentials'/>)}
-    
+
        <div className='row justify-content-center  bs mt-5 rounded'>
        <div className='col-md-5 '>
+       {error && (<Error message='Invalid Credentials'/>)}
       <h2 className='text-center m-2 ' style={{ fontSize: '35px' }}>Login</h2>
      <div className='col form text-center'>
       <input type='email' placeholder='Email' className='form-control mb-3 col-sm-5' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
@@ -46,7 +47,7 @@ function Loginscreen() {
      </div>
      </div>
       </div>
-  </>
+  </div>
    )
 }
 
