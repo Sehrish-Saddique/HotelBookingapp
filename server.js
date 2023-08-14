@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const dbConfig = require('./db');
-const roomsRoute = require('../routes/roomsRoute')
-const usersRoute = require('../routes/usersRoute')
+const roomsRoute = require('./routes/roomsRoute')
+const usersRoute = require('./routes/usersRoute')
   
  app.use((req,res,next)=>{
   res.header('Access-Control-Allow-Origin','*');
