@@ -2,15 +2,22 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 import Loader from "../components/Loader";
-import Error from "../components/Error";    
-function Bookingscreen({match} ) {
-    const { roomid } = useParams();
+import Error from "../components/Error";  
+import moment from 'moment';
 
+function Bookingscreen({match} ) {
+    const { roomid , fromdate,todate } = useParams();
+    // const { fromdate } = moment(useParams()).format('DD-MM-YYYY');
+    // const { todate } = moment(useParams()).format('DD-MM-YYYY');
+    console.log(fromdate);
+    
+    console.log(todate);
     console.log(roomid);
     const[loading,setloading]=useState(true);
     const [error, seterror] = useState();
     const[room, setroom]= useState([]);
  
+  // const totaldays = moment.duration(todate.diff(fromdate)).asDays();
     useEffect(() => {
         async function fetchdata() {
             try {
@@ -52,15 +59,15 @@ function Bookingscreen({match} ) {
                         <hr/>
                        <b>
                        <p>Name : </p>
-                        <p>From Date : </p>
-                        <p>to Date : </p>
+                        <p>From Date : {fromdate}</p>
+                        <p>to Date : {todate}</p>
                         <p>Max Count : {room.maxcount} </p>
                        </b>
                      </div>
                         <div className="col-md-3">
                         <h1>Amount : </h1>
                         <hr/>
-                        <p>Total days : </p>
+                        {/* <p>Total days : {totaldays} </p> */}
                         <p>Rent per day : {room.rentperday}</p>
                         <p>Total Amount : </p>
                         </div>

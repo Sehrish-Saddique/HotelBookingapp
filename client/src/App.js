@@ -13,7 +13,7 @@ import Loginscreen from './screens/Loginscreen';
      <BrowserRouter>
 <Routes>
 <Route path="/Home" element={<Homescreen />} />
-<Route path="/book/:roomid" element={<Bookingscreen />} />
+<Route path="/book/:roomid/:fromdate/:todate" element={<Bookingscreen />} />
 <Route path="/register" exact element={<Registerscreen />} />
 <Route path="/login" exact element={<Loginscreen />} />
  </Routes>
