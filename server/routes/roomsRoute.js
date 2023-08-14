@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const Room =require('../models/room')
 
+router.get('/', (req, res) => {
+    res.send('Hello from rooms route.') 
+});
 router.get("/getallrooms", async(req, res)=>{
 try
 {
