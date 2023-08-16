@@ -6,4 +6,4 @@ var connection = mongoose.connection;
 connection.on('error',()=>{console.log('😔 error connecting to db')});
 connection.on('connected',()=>{console.log('❤️  ❤️  ❤️    Connected to db')});
 
-module.exports = mongoose;   
+ 
