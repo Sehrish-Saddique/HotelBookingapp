@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 router.get("/getallrooms", async(req, res)=>{
 try
 {
-      rooms = await Room.find({})
+    const rooms = await Room.find({})
     return res.json ({ rooms });
 
 }
